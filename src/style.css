@@ -1,0 +1,98 @@
+body{
+    width: 100%;
+    
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(240, 248, 255,0.6);
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.current {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0px;
+    gap: 5px;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+}
+
+h2{
+    margin: 5px 10px;
+    color: rgba(32, 237, 9, 0.4);
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2rem;
+}
+.next5 {
+    display: flex;
+    margin: 0px;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
+    max-width: 100%;  /* Limits the width */
+    overflow: auto;
+    padding: 15px 0;
+    border-radius: 10px;
+    
+}
+#next{
+    padding: 3px;
+    background-color: rgba(60, 59, 59,0.7);
+    font-weight: bold;
+    width:max-content;
+    border-radius: 10px;
+}
+.next5 div{
+    min-width: 200px;
+    padding: 0 10px;
+    margin: 0 10px;
+    max-width: 300px;
+    border-right: 3px solid black;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+input{
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(115, 97, 74);
+    color: white;
+    font-style: italic;
+    border: none;
+    padding: 2px 4px;
+}
+button:hover{
+    font-weight: bold;
+}
+footer{
+background-color: rgb(223, 212, 212);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+padding: 5px;
+}
+footer img{
+    width: 30px;
+   
+}
+.info ,.today{
+    background-color:rgba(0, 0, 0, 0.4);
+    padding:10px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
