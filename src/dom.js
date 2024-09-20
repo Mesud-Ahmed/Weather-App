@@ -7,6 +7,7 @@ import defaultImage from './images/default.jpg';
 
 
 let data = await fetchNewCity("New York")
+
 const content = document.querySelector(".info")
 const addressInfo = document.createElement("h2")
 addressInfo.innerText = "Address Information:"
@@ -20,10 +21,8 @@ today.appendChild(todayHeader)
 const next5 = document.querySelector(".next5")
 const input = document.querySelector("#search")
 const btn = document.querySelector("#look")
-const todayWeather = data.days[0]
-let unit = "°C"
-const condition = data.days[0].conditions
-let days = data.days
+
+
 
 btn.addEventListener("click", async () => {
     if (input.value.trim() !== '') {
@@ -36,7 +35,12 @@ btn.addEventListener("click", async () => {
         manipulateDom()
     }
 })
+let todayWeather,unit = " °C" ,condition ,days
+
 function manipulateDom() {
+    condition = data.days[0].conditions; // Move this inside the function
+    todayWeather = data.days[0];
+    days = data.days;
 
     for (let key in data) {
         if (key != "queryCost" && key != "tzoffset" && key != "days") {
@@ -76,9 +80,7 @@ function manipulateDom() {
                 para.innerText = `${key}: ${days[i][key]}`;
                 div.append(para);
             }
-            // const para = document.createElement("p")
-            // para.innerText = `${key}: ${days[i][key]} `
-            // div.appendChild(para)
+            
 
         }
         next5.appendChild(div)
@@ -104,6 +106,7 @@ function setWeatherCondition() {
     }
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundPosition = "center";
+ 
     document.body.style.backgroundRepeat = "no-repeat";
 
 }

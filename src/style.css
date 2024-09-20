@@ -34,7 +34,7 @@ h2{
     margin: 0px;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.6);
-    max-width: 100%;  /* Limits the width */
+    max-width: 100%;  
     overflow: auto;
     padding: 15px 0;
     border-radius: 10px;
